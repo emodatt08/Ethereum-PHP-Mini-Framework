@@ -6,7 +6,7 @@ use App\Controllers\Controller;
 
 class IndexController extends Controller{
 
-        public function index($id){
+        public function index(){
             echo "This is the IndexController";
         }
 }

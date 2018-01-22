@@ -13,4 +13,5 @@ class BaseHelper extends View{
     public function view($view){
         return $this->view->render($view); 
     }
+
 }
