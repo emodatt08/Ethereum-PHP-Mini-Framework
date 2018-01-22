@@ -24,6 +24,7 @@ if(isset($tokens[4])){
 }
 
 
+
 /**
  * Instantiate Controller
  */
@@ -32,7 +33,7 @@ $name = "\\App\\Controllers\\" . $controllerName;
 $file = "app/Controllers/" . $controllerName.".php";
 //print_r($file); die();
 if(file_exists($file)){  
-    $controller =   (new $name)->$action();
+    $controller =   (new $name)->$action($param);
 }else{
     $name = "\\App\\Helpers\\ErrorHelper";
     $action = "error";

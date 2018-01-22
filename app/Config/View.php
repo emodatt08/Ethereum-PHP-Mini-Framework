@@ -18,6 +18,6 @@ class View
      * @param $viewScript
      */
     public function render($viewScript){
-        require($_SERVER['DOCUMENT_ROOT']."/".$viewScript);
+        require($_SERVER['DOCUMENT_ROOT']."/".$viewScript.".php");
     }
 }

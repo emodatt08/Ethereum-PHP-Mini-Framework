@@ -9,7 +9,7 @@ class ErrorHelper extends BaseHelper{
 
     public function error(){
         //$this->response->message = "This view doesnt exist";
-        $this->view('views/error/index.php');
+        $this->view('views/error/index');
     
     }
 }
