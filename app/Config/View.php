@@ -20,4 +20,14 @@ class View
     public function render($viewScript){
         require($_SERVER['DOCUMENT_ROOT']."/".$viewScript.".php");
     }
+
+    /**
+     * Renders json data
+     * @param array $data
+     * @return json 
+     */
+    public function convert($data = []){
+        header('Content-type', 'application/json');
+        return json_encode($data);
+    }
 }
